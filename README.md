@@ -54,13 +54,9 @@ A IDE está disponível em **Português, Inglês e Espanhol**, com troca de idio
 - Conexão com internet
 - Delphi/RAD Studio instalado na máquina (a IDE auxilia a geração e compilação, mas não substitui o compilador oficial)
 
-### Licenciamento
-O KarnoX Builder é um produto comercial licenciado por conta.
 
 ### Contato
 **Desenvolvido por:** Eurico Júnior
-**E-mail:** euricotecnologia@hotmail.com
-**Contato:** +55 19 97139-5449
 
 [⬆ Voltar ao topo](#karnox-builder)
 
@@ -121,8 +117,7 @@ KarnoX Builder is a commercial product licensed per account.
 
 ### Contact
 **Developed by:** Eurico Júnior
-**Email:** euricotecnologia@hotmail.com
-**Contact:** +55 19 97139-5449
+
 
 [⬆ Back to top](#karnox-builder)
 
@@ -183,8 +178,7 @@ KarnoX Builder es un producto comercial licenciado por cuenta.
 
 ### Contacto
 **Desarrollado por:** Eurico Júnior
-**Correo electrónico:** euricotecnologia@hotmail.com
-**Contacto:** +55 19 97139-5449
+
 
 [⬆ Volver arriba](#karnox-builder)
 
