@@ -1,0 +1,53 @@
+{
+  "name": "karnoxbuilder",
+  "version": "0.1.1",
+  "description": "IDE de IA para desenvolvimento de aplicações Delphi",
+  "main": "./out/main/index.js",
+  "author": "KarnoX",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "obfuscate": "node scripts/obfuscate.js",
+    "dist:win": "npm run build && npm run obfuscate && electron-builder --win portable --config electron-builder.json"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@monaco-editor/react": "^4.6.0",
+    "better-sqlite3": "^12.11.1",
+    "i18next": "^26.3.6",
+    "lucide-react": "^1.24.0",
+    "monaco-editor": "^0.55.1",
+    "mssql": "^12.7.0",
+    "mysql2": "^3.15.3",
+    "node-firebird": "^2.8.1",
+    "openai": "^4.77.0",
+    "oracledb": "^7.0.1",
+    "pg": "^8.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^17.0.10",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "javascript-obfuscator": "^5.5.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}

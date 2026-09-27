@@ -1,0 +1,22 @@
+.group-project-list { padding: 4px 0 10px; }
+.group-project { border-bottom: 1px solid color-mix(in srgb, var(--border) 65%, transparent); }
+.group-project.active { background: color-mix(in srgb, var(--accent) 7%, transparent); box-shadow: inset 2px 0 var(--accent); }
+.group-project.disabled { opacity: .58; }
+.group-project-header { min-height: 36px; display: flex; align-items: center; gap: 5px; padding: 3px 5px 3px 3px; cursor: pointer; }
+.group-project-header:hover { background: var(--bg-hover); }
+.group-project-header button { display: flex; align-items: center; justify-content: center; width: 20px; height: 22px; padding: 0; color: var(--text-dim); background: transparent; border: 0; border-radius: 3px; }
+.group-project-header button:hover:not(:disabled), .group-project-header button.active { color: var(--text-bright); background: var(--bg-active); }
+.group-project-header button:disabled { opacity: .25; }
+.group-project-enabled { color: #36b37e !important; }
+.group-project.disabled .group-project-enabled { color: var(--text-dim) !important; }
+.group-project-name { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 1px; }
+.group-project-name span { overflow: hidden; color: var(--text); font-size: 11.5px; text-overflow: ellipsis; white-space: nowrap; }
+.group-project-name small { color: var(--text-dim); font-size: 9px; }
+.group-project-active-label { padding: 1px 4px; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent); border-radius: 7px; font-size: 8px; }
+.group-project-order { display: none; align-items: center; }
+.group-project-header:hover .group-project-order { display: flex; }
+.group-project-tree { padding-bottom: 5px; }
+.group-dependencies { padding: 6px 10px 8px 32px; color: var(--text-dim); background: var(--bg-panel); border-top: 1px solid var(--border); font-size: 9.5px; }
+.group-dependencies > div { margin-bottom: 5px; }
+.group-dependencies label { display: flex; align-items: center; gap: 5px; padding: 2px 0; color: var(--text); }
+.group-dependencies input { width: 12px; height: 12px; accent-color: var(--accent); }

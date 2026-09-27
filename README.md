@@ -2,6 +2,46 @@
 
 🇧🇷 [Português](#português) | 🇺🇸 [English](#english) | 🇪🇸 [Español](#español)
 
+<p align="center">
+  <img src="img/00.png" alt="KarnoX Builder — IDE No-Code para Delphi" width="900">
+</p>
+
+## Demonstração / Gallery / Galería
+
+<table>
+  <tr>
+    <td><img src="img/01.png" alt="Criação de novo projeto"></td>
+    <td><img src="img/02.png" alt="Assistente de novo projeto"></td>
+  </tr>
+  <tr>
+    <td><img src="img/03.png" alt="Configuração do projeto Delphi"></td>
+    <td><img src="img/04.png" alt="Geração assistida por IA"></td>
+  </tr>
+  <tr>
+    <td><img src="img/05.png" alt="Editor de código Delphi"></td>
+    <td><img src="img/06.png" alt="Ferramentas do KarnoX Builder"></td>
+  </tr>
+  <tr>
+    <td><img src="img/07.png" alt="Designer visual No-Code"></td>
+    <td><img src="img/08.png" alt="Configurações do designer"></td>
+  </tr>
+  <tr>
+    <td><img src="img/09.png" alt="Explorador de banco de dados"></td>
+    <td><img src="img/10.png" alt="Assistente de banco de dados"></td>
+  </tr>
+  <tr>
+    <td><img src="img/11.png" alt="Gerenciamento de formulários"></td>
+    <td><img src="img/12.png" alt="Recursos de produtividade"></td>
+  </tr>
+  <tr>
+    <td><img src="img/13.png" alt="Publicação de projeto"></td>
+    <td><img src="img/14.png" alt="Projeto Delphi gerado"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="img/15.png" alt="Aplicação completa no designer visual"></td>
+  </tr>
+</table>
+
 ---
 
 ## Português
@@ -54,6 +94,8 @@ A IDE está disponível em **Português, Inglês e Espanhol**, com troca de idio
 - Conexão com internet
 - Delphi/RAD Studio instalado na máquina (a IDE auxilia a geração e compilação, mas não substitui o compilador oficial)
 
+### Acesso
+O aplicativo inicia diretamente, sem cadastro, login ou plano de assinatura.
 
 ### Contato
 **Desenvolvido por:** Eurico Júnior
@@ -112,8 +154,8 @@ The IDE is available in **Portuguese, English, and Spanish**, with real-time lan
 - Internet connection
 - Delphi/RAD Studio installed on the machine (the IDE assists with generation and compilation, but does not replace the official compiler)
 
-### Licensing
-KarnoX Builder is a commercial product licensed per account.
+### Access
+The application starts directly, with no registration, login, or subscription plan required.
 
 ### Contact
 **Developed by:** Eurico Júnior
@@ -173,8 +215,8 @@ La IDE está disponible en **Portugués, Inglés y Español**, con cambio de idi
 - Conexión a internet
 - Delphi/RAD Studio instalado en la máquina (la IDE ayuda con la generación y compilación, pero no reemplaza al compilador oficial)
 
-### Licenciamiento
-KarnoX Builder es un producto comercial licenciado por cuenta.
+### Acceso
+La aplicación inicia directamente, sin registro, inicio de sesión ni plan de suscripción.
 
 ### Contacto
 **Desarrollado por:** Eurico Júnior

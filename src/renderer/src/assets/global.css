@@ -1,0 +1,159 @@
+:root {
+  --bg-app: #1e1e1e;
+  --bg-titlebar: #323233;
+  --bg-sidebar: #252526;
+  --bg-panel: #1e1e1e;
+  --bg-editor: #1e1e1e;
+  --bg-input: #3c3c3c;
+  --bg-hover: #2a2d2e;
+  --bg-active: #37373d;
+  --bg-button: #0e639c;
+  --bg-button-hover: #1177bb;
+  --bg-chip: #2d2d30;
+  --bg-chip-hover: #37373d;
+  --border: #3c3c3c;
+  --text: #cccccc;
+  --text-dim: #9d9d9d;
+  --text-bright: #ffffff;
+  --accent: #007acc;
+  --success: #4ec9b0;
+  --error: #f14c4c;
+  --warning: #cca700;
+  --font-ui: 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Cascadia Code', 'Consolas', monospace;
+}
+
+:root[data-theme='light'] {
+  --bg-app: #ffffff;
+  --bg-titlebar: #f3f3f3;
+  --bg-sidebar: #f3f3f3;
+  --bg-panel: #ffffff;
+  --bg-editor: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #e8e8e8;
+  --bg-active: #e0e0e0;
+  --bg-button: #007acc;
+  --bg-button-hover: #005f9e;
+  --bg-chip: #ececec;
+  --bg-chip-hover: #dcdcdc;
+  --border: #d4d4d4;
+  --text: #3b3b3b;
+  --text-dim: #6e6e6e;
+  --text-bright: #000000;
+  --accent: #007acc;
+  --success: #14825a;
+  --error: #cd3131;
+  --warning: #b58900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+button,
+input,
+textarea,
+select,
+option,
+label {
+  font-weight: 400;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+@keyframes kx-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: kx-spin 0.8s linear infinite;
+}
+
+.panel-restore {
+  width: 32px;
+  flex: 0 0 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 0;
+  color: var(--text-dim);
+  background: var(--bg-sidebar);
+  border: 0;
+  border-radius: 0;
+}
+
+.panel-restore-left { border-right: 1px solid var(--border); }
+.panel-restore-right { border-left: 1px solid var(--border); }
+.panel-restore:hover { color: var(--accent); background: var(--bg-hover); }

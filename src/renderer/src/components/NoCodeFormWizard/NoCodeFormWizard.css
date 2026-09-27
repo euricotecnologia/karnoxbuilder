@@ -1,0 +1,51 @@
+.nocode-wizard-backdrop { position: fixed; inset: 0; z-index: 5000; display: grid; place-items: center; padding: 28px; background: rgba(0,0,0,.58); }
+.nocode-wizard { width: min(980px, 94vw); max-height: 90vh; display: flex; flex-direction: column; overflow: hidden; background: var(--bg-panel); color: var(--text); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.38); }
+.nocode-wizard > header { display: flex; align-items: center; justify-content: space-between; padding: 17px 20px; border-bottom: 1px solid var(--border); }
+.nocode-wizard > header > div { display: flex; align-items: center; gap: 11px; }
+.nocode-wizard h2, .nocode-wizard h3 { margin: 0; font-weight: 400; color: var(--text-bright); }
+.nocode-wizard h2 { font-size: 18px; }.nocode-wizard header p { margin: 3px 0 0; font-size: 11.5px; color: var(--text-dim); }
+.nocode-wizard button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--border); border-radius: 5px; background: var(--bg-input); color: var(--text); padding: 8px 12px; }
+.nocode-wizard button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }.nocode-wizard button:disabled { opacity: .55; }
+.nocode-wizard header > button { padding: 6px; background: transparent; border: 0; }
+.nocode-steps { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--border); background: var(--bg-sidebar); }
+.nocode-steps div { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 11px; color: var(--text-dim); font-size: 12px; }
+.nocode-steps span { width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 50%; }
+.nocode-steps .active { color: var(--accent); box-shadow: inset 0 -2px var(--accent); }.nocode-steps .active span, .nocode-steps .done span { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
+.nocode-wizard > main { min-height: 360px; overflow: auto; padding: 22px; }
+.nocode-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }.nocode-form-grid .full { grid-column: 1 / -1; }
+.nocode-form-grid label { display: flex; flex-direction: column; gap: 6px; color: var(--text-dim); font-size: 11.5px; }
+.nocode-form-grid input, .nocode-form-grid select, .nocode-field-row input, .nocode-field-row select { min-width: 0; padding: 9px 10px; border: 1px solid var(--border); border-radius: 5px; outline: none; background: var(--bg-input); color: var(--text-bright); font: inherit; }
+.nocode-form-grid input:focus, .nocode-form-grid select:focus, .nocode-field-row input:focus, .nocode-field-row select:focus { border-color: var(--accent); }
+.nocode-connection-row { display: flex; gap: 8px; }
+.nocode-connection-row input { flex: 1; min-width: 0; }
+.nocode-connection-status { padding: 9px 12px; border: 1px solid color-mix(in srgb, #2fbf71 50%, var(--border)); border-radius: 5px; color: #2fbf71; background: color-mix(in srgb, #2fbf71 8%, transparent); font-size: 12px; }
+.nocode-connection-status.error { border-color: color-mix(in srgb, #e45b5b 50%, var(--border)); color: #e45b5b; background: color-mix(in srgb, #e45b5b 8%, transparent); }
+.nocode-database-summary { display: flex; align-items: center; gap: 10px; padding: 12px; border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border)); border-radius: 6px; background: color-mix(in srgb, var(--accent) 7%, var(--bg-input)); }
+.nocode-database-summary div { min-width: 0; display: flex; flex-direction: column; gap: 3px; }.nocode-database-summary strong { font-weight: 400; color: var(--text-bright); }.nocode-database-summary span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-dim); font-size: 11px; }
+.nocode-fields { display: flex; flex-direction: column; gap: 7px; }.nocode-field-head, .nocode-field-row { display: grid; grid-template-columns: 1.2fr 1fr 1.25fr 90px 38px; gap: 8px; align-items: center; }
+.nocode-field-head { padding: 0 3px 4px; color: var(--text-dim); font-size: 10.5px; }.nocode-field-row button { padding: 8px; color: #e45b5b; }.nocode-required { display: flex; align-items: center; gap: 7px; font-size: 11.5px; }.nocode-required input { accent-color: var(--accent); }
+.nocode-add-field { align-self: flex-start; margin-top: 7px; }.nocode-tip { margin-top: 6px; color: var(--text-dim); font-size: 11px; }
+.nocode-review { display: grid; gap: 12px; }.nocode-review > div { display: flex; flex-direction: column; gap: 4px; padding: 14px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg-input); }.nocode-review span, .nocode-review small { color: var(--text-dim); }.nocode-review strong { font-weight: 400; color: var(--text-bright); }.nocode-review aside { padding: 12px; border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); font-size: 11.5px; }
+.nocode-error { margin-top: 14px; padding: 10px 12px; border: 1px solid color-mix(in srgb, #e45b5b 50%, var(--border)); border-radius: 5px; color: #e45b5b; background: color-mix(in srgb, #e45b5b 8%, transparent); font-size: 12px; }
+.nocode-wizard > footer { display: flex; justify-content: flex-end; gap: 9px; padding: 13px 20px; border-top: 1px solid var(--border); background: var(--bg-sidebar); }.nocode-wizard button.primary { border-color: var(--accent); background: var(--accent); color: white; }
+.nocode-wizard button.primary:hover:not(:disabled) { border-color: color-mix(in srgb, var(--accent) 82%, black); background: color-mix(in srgb, var(--accent) 82%, black); color: white; }
+.nocode-success { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 24px; text-align: center; }.nocode-success > svg { color: #2fbf71; }.nocode-success p { max-width: 620px; margin: 0; color: var(--text-dim); }.nocode-success > div { max-width: 100%; padding: 9px 13px; overflow: hidden; text-overflow: ellipsis; border-radius: 5px; background: var(--bg-input); color: var(--text-bright); }
+@media (max-width: 760px) { .nocode-form-grid { grid-template-columns: 1fr; }.nocode-form-grid .full { grid-column: auto; }.nocode-field-head { display: none; }.nocode-field-row { grid-template-columns: 1fr 1fr; padding: 10px; border: 1px solid var(--border); border-radius: 6px; }.nocode-field-row select { grid-column: 1 / -1; } }
+
+.nocode-manager { width: min(1060px, 96vw); }
+.nocode-manager > main { min-height: 430px; }
+.nocode-manager-select { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(300px, 1.2fr); gap: 12px; margin-bottom: 18px; }
+.nocode-manager-select > label { display: flex; flex-direction: column; gap: 6px; color: var(--text-dim); font-size: 11.5px; }
+.nocode-manager-select select { padding: 9px 10px; border: 1px solid var(--border); border-radius: 5px; background: var(--bg-input); color: var(--text-bright); }
+.nocode-manager-select > div { display: flex; align-items: center; gap: 9px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; background: var(--bg-input); }
+.nocode-manager-select > div span { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.nocode-manager-select strong { font-weight: 400; color: var(--text-bright); }
+.nocode-manager-select small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-dim); }
+.nocode-manager-fields { max-height: 340px; overflow: auto; padding-right: 3px; }
+.nocode-change-summary { display: flex; align-items: center; gap: 8px; margin-top: 15px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 5px; background: var(--bg-input); font-size: 11px; }
+.nocode-change-summary span { padding: 3px 7px; border-radius: 10px; background: var(--bg-chip); }
+.nocode-change-summary small { margin-left: auto; color: var(--text-dim); }
+.nocode-manager-empty { min-height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-dim); text-align: center; }
+.nocode-manager-empty p { margin: 0; }
+.nocode-manager-success { display: flex; align-items: center; gap: 7px; margin-top: 14px; padding: 10px 12px; border: 1px solid color-mix(in srgb, #2fbf71 50%, var(--border)); border-radius: 5px; color: #2fbf71; background: color-mix(in srgb, #2fbf71 8%, transparent); font-size: 12px; }
+@media (max-width: 760px) { .nocode-manager-select { grid-template-columns: 1fr; }.nocode-change-summary { align-items: flex-start; flex-wrap: wrap; }.nocode-change-summary small { width: 100%; margin-left: 0; } }

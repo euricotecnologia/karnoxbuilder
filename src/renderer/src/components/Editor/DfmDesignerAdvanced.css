@@ -1,0 +1,141 @@
+.dfm-advanced .dfm-left-tabs.advanced {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dfm-advanced .dfm-left-tabs.advanced button {
+  font-size: 9.5px;
+}
+
+.dfm-advanced .dfm-design-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.dfm-advanced .dfm-design-actions button {
+  min-width: 28px;
+  padding: 4px 6px;
+}
+
+.dfm-advanced .dfm-control.multi-selected {
+  outline: 1px solid #1688f0;
+  outline-offset: 1px;
+}
+
+.dfm-inspector-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6px 8px 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.dfm-inspector-tabs button {
+  padding: 6px 3px;
+  color: var(--text-dim);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  font-size: 10.5px;
+}
+
+.dfm-inspector-tabs button.active {
+  color: var(--text-bright);
+  border-bottom-color: var(--accent);
+}
+
+.dfm-inspector-note,
+.dfm-side-help {
+  margin: 8px;
+  padding: 8px;
+  color: var(--text-dim);
+  background: var(--bg-chip);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.dfm-tab-order {
+  min-height: 0;
+  overflow: auto;
+}
+
+.dfm-tab-order > div:not(.dfm-side-help) {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) 25px 25px;
+  align-items: center;
+  gap: 3px;
+  margin: 3px 6px;
+  padding: 5px;
+  color: var(--text);
+  background: var(--bg-chip);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: default;
+}
+
+.dfm-tab-order > div.active {
+  border-color: var(--accent);
+}
+
+.dfm-tab-order label {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dfm-tab-order small {
+  color: var(--text-dim);
+  font-size: 8px;
+}
+
+.dfm-tab-order button {
+  padding: 2px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.dfm-inherited-badge {
+  float: right;
+  margin: 1px 7px 0 12px;
+  padding: 1px 6px;
+  color: #fff;
+  background: #6b55bd;
+  border-radius: 8px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.dfm-advanced .dfm-tray-item svg {
+  color: var(--accent);
+}
+
+@media (max-width: 1350px) {
+  .dfm-advanced .dfm-design-toolbar > span { display: none; }
+}
+
+.dfm-image-preview { width: 100%; height: 100%; display: block; object-fit: contain; pointer-events: none; }
+
+
+.dfm-main-menu-preview {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 8px;
+  gap: 18px;
+  color: #202020;
+  background: #f4f4f4;
+  border: 1px solid #b8b8b8;
+  border-top: 0;
+  font: 12px "Segoe UI", sans-serif;
+}
+
+.dfm-main-menu-preview span {
+  white-space: nowrap;
+}
+
+.dfm-main-menu-preview img { width: 14px; height: 14px; margin-right: 4px; object-fit: contain; vertical-align: -2px; }

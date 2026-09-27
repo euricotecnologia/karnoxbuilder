@@ -1,0 +1,28 @@
+{
+  "appId": "com.karnox.builder",
+  "productName": "KarnoX Builder",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "out/**/*",
+    "package.json"
+  ],
+  "asarUnpack": [
+    "**/*.node"
+  ],
+  "win": {
+    "icon": "KarnoX_Builder.ico",
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "KarnoXBuilder.exe"
+  },
+  "portable": {
+    "artifactName": "KarnoXBuilder.exe"
+  }
+}

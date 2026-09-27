@@ -1,0 +1,104 @@
+.console-panel {
+  background: var(--bg-panel);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.console-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.console-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-dim);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.console-tab.active {
+  color: var(--text-bright);
+  border-bottom-color: var(--accent);
+}
+
+.console-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.console-line-error {
+  color: var(--error);
+}
+
+.console-line-success {
+  color: var(--success);
+}
+
+.console-empty {
+  color: var(--text-dim);
+}
+.console-tabs-spacer {
+  flex: 1;
+}
+
+.console-fix-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 8px 3px 0;
+  padding: 3px 9px;
+  color: white;
+  background: var(--bg-button);
+  border: 0;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.console-fix-btn:hover:not(:disabled) { background: var(--bg-button-hover); }
+.console-fix-btn:disabled { opacity: 0.5; }
+
+.console-diagnostics {
+  max-height: 112px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 4px 8px;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+}
+
+.console-diagnostic {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 14px minmax(110px, 150px) 62px 58px 1fr;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  text-align: left;
+  font: 11px var(--font-mono);
+}
+
+.console-diagnostic:hover:not(:disabled) { background: var(--bg-hover); }
+.console-diagnostic.error, .console-diagnostic.fatal { color: var(--error); }
+.console-diagnostic.warning, .console-diagnostic.hint { color: var(--warning); }
+.console-diagnostic:disabled { opacity: 0.75; }
+.console-diagnostic-location, .console-diagnostic-message { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.console-diagnostic-line { color: var(--text-bright); white-space: nowrap; }
+.console-diagnostic-code { text-transform: uppercase; }

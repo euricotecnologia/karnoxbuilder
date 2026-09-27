@@ -1,0 +1,107 @@
+.change-review-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.change-review {
+  width: min(1180px, 96vw);
+  height: min(760px, 92vh);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--text);
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+.change-review-header,
+.change-review-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.change-review-header h2 {
+  margin: 0;
+  color: var(--text-bright);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.change-review-header p {
+  margin: 5px 0 0;
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+.change-review-close {
+  display: flex;
+  padding: 6px;
+  color: var(--text-dim);
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+
+.change-review-close:hover { background: var(--bg-hover); color: var(--text); }
+.change-review-body { min-height: 0; display: flex; flex: 1; }
+
+.change-review-files {
+  width: 310px;
+  flex-shrink: 0;
+  overflow: auto;
+  border-right: 1px solid var(--border);
+}
+
+.change-file-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.change-file-row:hover, .change-file-row.active { background: var(--bg-hover); }
+.change-file-name { min-width: 0; flex: 1; display: flex; flex-direction: column; }
+.change-file-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.change-file-name small { color: var(--text-dim); font-size: 10px; }
+.change-count { font-family: var(--font-mono); font-size: 10px; }
+.change-count.added { color: #44b86a; }
+.change-count.deleted { color: #e05a5a; }
+
+.change-review-diff { min-width: 0; display: flex; flex: 1; flex-direction: column; }
+.change-diff-title { padding: 9px 12px; color: var(--text-dim); border-bottom: 1px solid var(--border); font-size: 12px; }
+.change-diff-columns { min-height: 0; display: grid; grid-template-columns: 1fr 1fr; flex: 1; }
+.change-diff-column { min-width: 0; display: flex; flex-direction: column; }
+.change-diff-column.old { border-right: 1px solid var(--border); }
+.change-diff-label { padding: 6px 10px; color: var(--text-dim); background: var(--bg-chip); font-size: 11px; }
+.change-diff-column pre { flex: 1; margin: 0; padding: 10px; overflow: auto; color: var(--text); background: var(--bg-input); font: 11px/1.5 var(--font-mono); white-space: pre; }
+.change-diff-column.old pre { background: color-mix(in srgb, var(--bg-input) 94%, #e05a5a); }
+.change-diff-column.new pre { background: color-mix(in srgb, var(--bg-input) 94%, #44b86a); }
+.change-review-placeholder, .change-review-empty { padding: 18px; color: var(--text-dim); font-size: 12px; }
+
+.change-review-footer { position: relative; z-index: 2; min-height: 62px; flex-shrink: 0; border-top: 1px solid var(--border); border-bottom: 0; background: var(--bg-titlebar); box-shadow: 0 -5px 16px rgba(0, 0, 0, 0.12); font-size: 12px; }
+.change-review-footer-actions { display: flex; align-items: center; gap: 10px; padding-left: 16px; border-left: 1px solid var(--border); }
+.change-review-cancel, .change-review-apply { display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 4px; font-size: 12px; }
+.change-review-cancel { color: var(--text); background: transparent; border: 1px solid var(--border); }
+.change-review-apply { color: white; background: var(--bg-button); border: 1px solid var(--bg-button); }
+.change-review-apply:disabled { opacity: 0.5; }
+
+@media (max-width: 850px) {
+  .change-review-backdrop { padding: 12px; }
+  .change-review-files { width: 240px; }
+  .change-diff-columns { grid-template-columns: 1fr; }
+  .change-diff-column.old { display: none; }
+}

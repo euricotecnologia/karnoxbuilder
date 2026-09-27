@@ -1,0 +1,16 @@
+node_modules
+out
+dist
+dist-electron
+release
+.tmp
+.claude
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.db-shm
+*.db-wal
+*.log
+.DS_Store
+*.local

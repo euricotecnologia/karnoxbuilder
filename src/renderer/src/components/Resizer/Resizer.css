@@ -1,0 +1,21 @@
+.resizer {
+  flex-shrink: 0;
+  background: transparent;
+  position: relative;
+  z-index: 5;
+}
+
+.resizer.vertical {
+  width: 4px;
+  cursor: col-resize;
+}
+
+.resizer.horizontal {
+  height: 4px;
+  cursor: row-resize;
+}
+
+.resizer:hover,
+.resizer.active {
+  background: var(--accent);
+}
