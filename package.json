@@ -1,6 +1,6 @@
 {
   "name": "karnoxbuilder",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "IDE de IA para desenvolvimento de aplicações Delphi",
   "main": "./out/main/index.js",
   "author": "KarnoX",

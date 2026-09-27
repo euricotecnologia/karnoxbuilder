@@ -23,22 +23,19 @@
   </tr>
   <tr>
     <td><img src="img/07.png" alt="Designer visual No-Code"></td>
-    <td><img src="img/08.png" alt="Configurações do designer"></td>
-  </tr>
-  <tr>
     <td><img src="img/09.png" alt="Explorador de banco de dados"></td>
+  </tr>
+  <tr>
     <td><img src="img/10.png" alt="Assistente de banco de dados"></td>
-  </tr>
-  <tr>
     <td><img src="img/11.png" alt="Gerenciamento de formulários"></td>
+  </tr>
+  <tr>
     <td><img src="img/12.png" alt="Recursos de produtividade"></td>
-  </tr>
-  <tr>
     <td><img src="img/13.png" alt="Publicação de projeto"></td>
-    <td><img src="img/14.png" alt="Projeto Delphi gerado"></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="img/15.png" alt="Aplicação completa no designer visual"></td>
+    <td><img src="img/14.png" alt="Projeto Delphi gerado"></td>
+    <td><img src="img/15.png" alt="Aplicação completa no designer visual"></td>
   </tr>
 </table>
 
